@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rconic — Privacy Policy</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #14161a; } a { color: #6ea8fe; } code { background:#22252b; } }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  .eff { color: #666; margin: 0 0 1.5rem; }
+  @media (prefers-color-scheme: dark) { .eff { color: #9aa0a6; } }
+  .tldr { border-left: 4px solid #2e7d32; padding: .75rem 1rem; background: rgba(46,125,50,.08); border-radius: 6px; margin: 1rem 0 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: #1a5fb4; }
+  code { font: .9em ui-monospace, SFMono-Regular, Menlo, monospace; background: #f0f1f3; padding: .1em .35em; border-radius: 4px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #666; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-color:#333; color:#9aa0a6; } }
+</style>
+</head>
+<body>
+<h1>Rconic — Privacy Policy</h1>
+<p class="eff"><strong>Effective date: July 26, 2026</strong></p>
+
+<p>Rconic (&ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is a Steam/Source game-server console and monitor for Android. This policy explains what data the app handles, where it goes, and your choices.</p>
+
+<div class="tldr">
+<strong>The short version:</strong> Rconic is <strong>local-first and has no backend of our own.</strong> Almost everything you enter stays <strong>on your device</strong>. Data leaves your device only to the game servers you choose to connect to, to Steam (to show player avatars), to our crash-reporting provider (with sensitive values stripped out), and to Google (for the optional one-time purchase). We do not run ads, we do not sell your data, and there is no account to create.
+</div>
+
+<h2>1. Data stored on your device (not sent to us)</h2>
+<p>Rconic stores the following <strong>locally on your device only</strong>. We never receive it:</p>
+<ul>
+  <li><strong>Servers you add</strong> — nickname, host/address, port, and settings.</li>
+  <li><strong>RCON credentials</strong> — passwords you enter are stored <strong>encrypted</strong> using the Android Keystore (AES-256-GCM). They are never sent to us.</li>
+  <li><strong>Player Intelligence</strong> — for players seen on your monitored servers: their SteamID, last known name, first/last-seen times, and any <strong>tags and notes you add yourself</strong>.</li>
+  <li><strong>Session and population history</strong> — records of when players were seen and player-count over time, for the in-app roster and graphs.</li>
+  <li><strong>App settings and your Pro status.</strong></li>
+</ul>
+<p>This data lives only on your device and is removed when you <strong>uninstall</strong> the app. You can also delete player data from within the app (Settings &rarr; &ldquo;Clear all player data&rdquo;).</p>
+
+<h2>2. Data the app transmits, and to whom</h2>
+<p>Rconic connects to the following services. We do not operate any server that receives your data.</p>
+<ul>
+  <li><strong>Game servers you configure</strong> — to show status and run admin commands, the app sends queries and commands to the servers <strong>you</strong> add. To use RCON features, the app sends the RCON password you stored to <strong>your</strong> server to authenticate. See <em>Security</em> below.</li>
+  <li><strong>Steam (Valve)</strong> — to display a player&rsquo;s avatar, the app sends that player&rsquo;s <strong>SteamID</strong> to Steam&rsquo;s public profile endpoint (<code>steamcommunity.com</code>) and loads the avatar image from Steam&rsquo;s content network. This uses Steam&rsquo;s public, keyless endpoint and is governed by <a href="https://store.steampowered.com/privacy_agreement/">Valve&rsquo;s Privacy Policy</a>.</li>
+  <li><strong>Sentry (crash &amp; performance diagnostics)</strong> — see Section 3.</li>
+  <li><strong>Google Play (purchases)</strong> — the optional one-time <strong>Rconic Pro</strong> unlock is processed by Google Play Billing. Google handles the payment; the app never sees or stores your payment details. See <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>.</li>
+  <li><strong>Buy Me a Coffee (optional tip)</strong> — only if you tap &ldquo;Support development&rdquo;, the app opens your browser to our Buy Me a Coffee page. Any information you provide there is handled by Buy Me a Coffee, not the app.</li>
+</ul>
+
+<h2>3. Crash and performance diagnostics</h2>
+<p>Rconic uses <strong>Sentry</strong> (provided by Functional Software, Inc., d/b/a Sentry) to collect crash reports and performance diagnostics that help us find and fix bugs and keep the app stable. Sentry processes this information on our behalf.</p>
+<p><strong>What we collect.</strong> When the app crashes or hits an error, or to measure performance, we send: the error and stack trace, your device model and Android version, the app version, coarse performance timings (for example app start time, screen render time, and the duration of network and database operations), and a random, app-generated installation identifier used only to group events that come from the same installation.</p>
+<p><strong>What we do NOT collect.</strong> We do not collect your name, email address, account, precise location, or advertising identifiers, and <strong>your IP address is not stored</strong>. We deliberately remove (redact) potentially sensitive values — such as game-server addresses, Steam IDs, and RCON credentials — before any report leaves your device.</p>
+<p><strong>Why.</strong> Solely to diagnose crashes and improve the app&rsquo;s stability and performance. We do <strong>not</strong> use this data for advertising, and we do <strong>not</strong> sell it or share it with third parties for their own purposes.</p>
+<p><strong>Retention.</strong> Diagnostic data is retained for up to <strong>90</strong> days and then automatically deleted. See <a href="https://sentry.io/privacy/">Sentry&rsquo;s Privacy Policy</a> for how it is processed on our behalf.</p>
+
+<h2>4. What we do NOT do</h2>
+<ul>
+  <li>No advertising and no ad identifiers.</li>
+  <li>No selling or renting of your data.</li>
+  <li>No user accounts, logins, or profiles held by us.</li>
+  <li>No analytics beyond the crash/performance diagnostics described in Section 3.</li>
+</ul>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>Internet / network state</strong> — to query and administer your servers and load avatars.</li>
+  <li><strong>Notifications</strong> — to show monitoring alerts (server online/offline, player activity).</li>
+  <li><strong>Foreground service</strong> — to keep monitoring running reliably while enabled.</li>
+  <li><strong>Run at startup</strong> — to resume monitoring after a device restart if you had it enabled.</li>
+</ul>
+
+<h2>6. Security</h2>
+<ul>
+  <li>RCON credentials are stored <strong>encrypted at rest</strong> using the Android Keystore (AES-256-GCM); the key never leaves the device&rsquo;s secure key store.</li>
+  <li>Diagnostics to Sentry and requests to Steam are sent over encrypted connections (HTTPS/TLS).</li>
+  <li><strong>Please note:</strong> the Source <strong>RCON protocol itself is not encrypted in transit</strong> — this is a property of the protocol, not the app. When you use RCON, your password and commands are sent to your server over the network. Use RCON on networks you trust (for example your own network or a VPN) where possible.</li>
+</ul>
+
+<h2>7. Data retention and deletion</h2>
+<ul>
+  <li><strong>On-device data</strong> (servers, credentials, player data, history, settings) is kept until you delete it in the app or <strong>uninstall</strong> the app.</li>
+  <li><strong>Diagnostic data</strong> in Sentry auto-expires after <strong>90</strong> days.</li>
+  <li>To request deletion of diagnostic data or ask any privacy question, contact us (Section 9). Because the diagnostic installation identifier is anonymous and not linked to any account, we generally cannot single out an individual&rsquo;s data from a request alone.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>Rconic is a tool for game-server administrators and is not directed to children. We do not knowingly collect data from children.</p>
+
+<h2>9. Contact</h2>
+<p>Questions or requests about this policy or your data: <a href="mailto:gibbonsjohnm@gmail.com">gibbonsjohnm@gmail.com</a></p>
+
+<h2>10. Changes to this policy</h2>
+<p>If we change how the app handles data, we will update this policy and its effective date. Material changes will be reflected here before they take effect.</p>
+
+<footer>Rconic Privacy Policy &middot; Effective July 26, 2026</footer>
+</body>
+</html>
