@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rconic — Delete your data</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #14161a; } a { color: #6ea8fe; } code { background:#22252b; } }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  .eff { color: #666; margin: 0 0 1.5rem; }
+  @media (prefers-color-scheme: dark) { .eff { color: #9aa0a6; } }
+  .tldr { border-left: 4px solid #2e7d32; padding: .75rem 1rem; background: rgba(46,125,50,.08); border-radius: 6px; margin: 1rem 0 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: #1a5fb4; }
+  code { font: .9em ui-monospace, SFMono-Regular, Menlo, monospace; background: #f0f1f3; padding: .1em .35em; border-radius: 4px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #666; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-color:#333; color:#9aa0a6; } }
+</style>
+</head>
+<body>
+<h1>Rconic — Delete your data</h1>
+<p class="eff">How to delete the data the Rconic Android app keeps about you.</p>
+
+<div class="tldr">
+<strong>The short version:</strong> Rconic has no accounts and no backend of its own. Almost everything stays on your phone, and you can delete it yourself at any time. The only data that leaves your phone is anonymous crash and performance diagnostics, which are deleted automatically after <strong>90 days</strong> or sooner if you ask.
+</div>
+
+<h2>Data on your device</h2>
+<p>Your servers, RCON passwords, player history, tags, notes, population charts and settings are stored only on your phone. To delete them:</p>
+<ul>
+  <li><strong>Player data only:</strong> in Rconic, open <strong>Settings</strong> and tap <strong>Clear all player data</strong>.</li>
+  <li><strong>Everything:</strong> uninstall Rconic, or go to Android <strong>Settings &rarr; Apps &rarr; Rconic &rarr; Storage &rarr; Clear storage</strong>.</li>
+</ul>
+<p>This takes effect immediately. We never had a copy of this data, so there is nothing else to delete.</p>
+
+<h2>Crash and performance diagnostics</h2>
+<p>When the app crashes or runs slowly, it sends a diagnostic report (crash logs, performance data and an anonymous installation ID, with passwords and other sensitive values removed) to our crash-reporting provider, Sentry.</p>
+<ul>
+  <li><strong>Deleted automatically:</strong> every report is deleted after <strong>90 days</strong>.</li>
+  <li><strong>Delete sooner:</strong> email <a href="mailto:gibbonsjohnm@gmail.com?subject=Rconic%20data%20deletion%20request">gibbonsjohnm@gmail.com</a> with the subject &ldquo;Rconic data deletion request&rdquo;. Tell us roughly when you used the app and your phone model so we can find the right reports. We will delete them within 30 days and reply to confirm.</li>
+  <li><strong>Stop future reports:</strong> uninstall the app. A reinstall starts with a new anonymous ID that is not linked to the old one.</li>
+</ul>
+<p>Because the ID is anonymous and not linked to any account, we may not always be able to single out your reports from a request alone; in that case they are still deleted automatically after 90 days.</p>
+
+<h2>Purchases</h2>
+<p>Rconic Pro is bought through Google Play. Google keeps the purchase record, and we don't receive your payment details. To manage or delete it, see your Google account&rsquo;s <a href="https://myaccount.google.com/">data and privacy settings</a>.</p>
+
+<p>For anything else, see the <a href="../">Rconic Privacy Policy</a> or email <a href="mailto:gibbonsjohnm@gmail.com">gibbonsjohnm@gmail.com</a>.</p>
+
+<footer>Rconic &middot; Delete your data</footer>
+</body>
+</html>
